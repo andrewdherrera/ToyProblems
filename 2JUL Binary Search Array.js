@@ -24,7 +24,7 @@ function binarySearch(array, target ) {
  while(minIndex <= maxIndex){
    let sumNum = Math.floor((minIndex + maxIndex) /2);
    if (array[sumNum] === target){
-       return target;
+       return sumNum;
    } else if (array[sumNum] < target){
        minIndex = sumNum + 1;
    } else maxIndex = sumNum -1;
